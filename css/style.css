@@ -10,22 +10,25 @@ body {
 }
 
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 8%;
+    padding: 5px ;
+    padding-left: 8%;
+    padding-right: 30px;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: blue;
+    box-shadow: 1px 1px 5px rgba(3, 3, 194, 0.803);
 }
 
 .logo {
  
     font-size:30px;
-    color:blue;
+    color:white;
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
@@ -35,7 +38,7 @@ body {
 .navbar a {
     display: inline-block;
     font-size: 18px;
-    color: #222;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     margin: 0px 20px;
@@ -43,12 +46,19 @@ body {
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * va(--i));
+    
 
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: #1743e3;
+    color: #fff200;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+
 }
 
 .social-media {
@@ -58,7 +68,7 @@ body {
     height: 40px;
 }
 
-a {
+.social-media a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,15 +93,23 @@ a:hover {
 a i {
     display: flex;
     font-size: 24px;
+    border: 2px solid white;
+    padding: 4px;
+    border-radius:40px;
     color: white;
     transform: rotate(-45deg);
 
+}
+#icon{
+    background-color: blue;
+    padding: 45px;
+    padding-right: 50px;
 }
 
 .home {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 92vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,12 +166,11 @@ a i {
 
 .home-img {
     position: relative;
-    width: 450px;
+    width: 430px;
     height: 450px;
     transform: rotate(45deg);
 
 }
-
 .home-img .rhombus {
     position: absolute;
     width: 100%;
@@ -169,7 +186,7 @@ a i {
     position: relative;
     top: 50px;
     left: -260px;
-    max-width: 750px;
+    max-width: 710px;
     transform: rotate(-45deg);
     opacity: 0;
     animation: car .5s ease forwards;
@@ -178,13 +195,15 @@ a i {
 
 .rhombus2 {
     position: absolute;
-    width: 700px;
+    width: 650px;
     height: 700px;
     background: blue;
     transform: rotate(45deg);
     z-index: -1;
     top: -25%;
     right: -25%;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 /* KEYFRAMES ANIMAIION */
@@ -265,4 +284,24 @@ a i {
 
 
     }
+}
+.product{
+    width: 100%;
+    height: 100vh;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    color: rgb(65, 63, 63);
+    font-weight: bold;
+
 }
